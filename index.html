@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrés Enciso - Asesoría Jurídica</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-scroll {
+        animation: scroll 40s linear infinite;
+        display: flex;
+        width: max-content;
+      }
+      .animate-scroll:hover {
+        animation-play-state: paused;
+      }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans text-slate-900 selection:bg-amber-700 selection:text-white min-h-screen">
+
+  <!-- HEADER / NAVBAR -->
+  <header class="bg-blue-950 text-white sticky top-0 z-50 shadow-lg border-b border-blue-900/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex items-center space-x-3">
+          <i data-lucide="scale" class="h-8 w-8 text-amber-600"></i>
+          <div>
+            <h1 class="text-xl font-bold uppercase tracking-wider text-white">Andrés Enciso</h1>
+            <p class="text-xs text-amber-500 tracking-widest">Asesoría Jurídica</p>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#servicios" class="text-slate-300 hover:text-amber-500 transition-colors">Áreas de Práctica</a>
+          <a href="#perfil" class="text-slate-300 hover:text-amber-500 transition-colors">Perfil Profesional</a>
+          <a href="#contacto" class="text-slate-300 hover:text-amber-500 transition-colors">Agendar Consulta</a>
+        </nav>
+        <a 
+          href="#contacto"
+          class="hidden md:inline-flex items-center justify-center px-6 py-2.5 border border-transparent text-sm font-medium rounded-md text-white bg-amber-700 hover:bg-amber-800 transition-colors shadow-md"
+        >
+          Consulta Inmediata
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-blue-950 text-white overflow-hidden">
+    <div class="absolute inset-0">
+      <img 
+        src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?auto=format&fit=crop&q=80&w=2000" 
+        alt="Balanza de la Justicia" 
+        class="w-full h-full object-cover opacity-40 mix-blend-overlay"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/80 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+      <div class="md:w-2/3">
+        <span class="text-amber-500 font-semibold tracking-wider uppercase text-sm border-l-4 border-amber-500 pl-3">
+          Firma Jurídica en Colombia
+        </span>
+        <h2 class="mt-4 text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+          Protegemos sus derechos con <span class="text-amber-600">Estrategia y Determinación</span>
+        </h2>
+        <p class="mt-6 text-lg md:text-xl text-slate-300 max-w-2xl">
+          No deje sus problemas legales al azar. Un pequeño detalle hoy puede ser la gran solución de mañana. Reciba asesoría jurídica especializada y soluciones efectivas para su tranquilidad.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a 
+            href="#contacto" 
+            class="inline-flex justify-center items-center px-8 py-3.5 border border-transparent text-base font-medium rounded-md text-white bg-amber-700 hover:bg-amber-800 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
+          >
+            Agendar Asesoría Ahora
+            <i data-lucide="chevron-right" class="ml-2 h-5 w-5"></i>
+          </a>
+          <a 
+            href="#servicios" 
+            class="inline-flex justify-center items-center px-8 py-3.5 border border-slate-600 text-base font-medium rounded-md text-white hover:bg-slate-800 transition-colors"
+          >
+            Conocer Especialidades
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CINTA DE IMÁGENES (MARQUEE) -->
+  <section class="bg-slate-200 py-8 overflow-hidden border-y border-slate-300">
+    <div class="animate-scroll cursor-pointer">
+      <!-- Set 1 de imágenes -->
+      <div class="flex gap-6 px-3">
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600" alt="Martillo legal" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?auto=format&fit=crop&q=80&w=600" alt="Balanza de la justicia" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&q=80&w=600" alt="Libros de derecho" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600" alt="Corte" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=600" alt="Documentos legales" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+      </div>
+      <!-- Set 2 de imágenes (Duplicado para efecto de scroll infinito continuo) -->
+      <div class="flex gap-6 px-3">
+        <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600" alt="Martillo legal" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?auto=format&fit=crop&q=80&w=600" alt="Balanza de la justicia" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?auto=format&fit=crop&q=80&w=600" alt="Libros de derecho" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=600" alt="Corte" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=600" alt="Documentos legales" class="h-48 w-72 object-cover rounded-xl shadow-md border-2 border-white" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFIL SECTION -->
+  <section id="perfil" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <div class="w-64 lg:w-72 shrink-0 relative">
+          <div class="absolute inset-0 bg-amber-700 rounded-lg transform translate-x-3 translate-y-3"></div>
+          <!-- ESPACIO PARA TU FOTO REAL -->
+          <img 
+            src="PERFIL.jpeg" 
+            alt="Andrés Camilo Enciso Castiblanco" 
+            class="relative rounded-lg shadow-xl w-full object-cover z-10 border-4 border-white"
+            style="aspect-ratio: 3/4;"
+          />
+        </div>
+        <div class="lg:w-2/3">
+          <h2 class="text-3xl font-bold text-slate-900 mb-2">Andrés Camilo Enciso Castiblanco</h2>
+          <p class="text-xl text-amber-700 font-medium mb-6 flex items-center">
+            <i data-lucide="book-open" class="h-5 w-5 mr-2"></i>
+            Abogado - Universidad San Buenaventura, Sede Bogotá
+          </p>
+          <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
+            <p>
+              Con una sólida formación académica y un profundo sentido de la ética profesional, me dedico a brindar soluciones jurídicas integrales a personas y empresas en Colombia.
+            </p>
+            <p>
+              Entiendo que detrás de cada caso legal hay personas, familias y patrimonios en juego. Por ello, mi compromiso es ofrecer una asesoría transparente, honesta y estratégicamente diseñada para proteger sus intereses.
+            </p>
+            <p>
+              No espere a que un problema escale. La prevención y el acompañamiento temprano son las herramientas más efectivas en el derecho.
+            </p>
+          </div>
+          
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://wa.me/573012867680?text=Hola%20Andr%C3%A9s%2C%20deseo%20solicitar%20una%20asesor%C3%ADa%20jur%C3%ADdica." target="_blank" rel="noreferrer" class="flex items-center px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-md transition-colors font-medium">
+              <i data-lucide="message-circle" class="h-5 w-5 mr-2 text-green-600"></i>
+              Solicitar Asesoría
+            </a>
+            <a href="https://www.instagram.com/andresk.enciso?igsh=MWM5bm91MWRpNTJtcQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" class="flex items-center px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-md transition-colors font-medium">
+              <i data-lucide="instagram" class="h-5 w-5 mr-2 text-pink-600"></i>
+              @andresk.enciso
+            </a>
+            <a href="mailto:andreskacec@gmail.com" class="flex items-center px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-md transition-colors font-medium">
+              <i data-lucide="mail" class="h-5 w-5 mr-2 text-amber-700"></i>
+              Enviar Correo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁREAS DE PRÁCTICA -->
+  <section id="servicios" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900">Áreas de Práctica Jurídica</h2>
+        <div class="mt-4 h-1 w-24 bg-amber-600 mx-auto rounded-full"></div>
+        <p class="mt-4 text-lg text-slate-600">
+          Cobertura legal especializada en las principales ramas del derecho colombiano, garantizando representación idónea en cada escenario.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Servicio 1 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="scale" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Civil</h3>
+          <p class="text-slate-600">
+            Elaboración y revisión de contratos, responsabilidad civil, estudio de títulos, procesos posesorios, sucesiones y resolución de conflictos entre particulares.
+          </p>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="shield" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Penal</h3>
+          <p class="text-slate-600">
+            Defensa técnica, representación de víctimas, acompañamiento en audiencias, denuncias, querellas y asesoría preventiva en delitos corporativos.
+          </p>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="briefcase" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Laboral</h3>
+          <p class="text-slate-600">
+            Asesoría a empresas y trabajadores, liquidaciones, indemnizaciones por despido injusto, acoso laboral, pensiones y seguridad social.
+          </p>
+        </div>
+
+        <!-- Servicio 4 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="users" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho de Familia</h3>
+          <p class="text-slate-600">
+            Procesos de divorcio, fijación de cuotas alimentarias, custodia y visitas, uniones maritales de hecho, capitulaciones y violencia intrafamiliar.
+          </p>
+        </div>
+
+        <!-- Servicio 5 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="landmark" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Comercial</h3>
+          <p class="text-slate-600">
+            Constitución de sociedades, registro de marcas, cobro de cartera (pagarés, letras de cambio), fusiones y estructuración de negocios.
+          </p>
+        </div>
+
+        <!-- Servicio 6 -->
+        <div class="bg-white rounded-xl shadow-md p-8 border-t-4 border-transparent hover:border-amber-600 transition-all duration-300 hover:shadow-xl group">
+          <div class="h-14 w-14 bg-slate-50 text-amber-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+            <i data-lucide="book-open" class="h-7 w-7"></i>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3">Derecho Administrativo</h3>
+          <p class="text-slate-600">
+            Derechos de petición, acciones de tutela, demandas contra el Estado, multas, comparendos y acompañamiento en procesos disciplinarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO Y CONTACTO -->
+  <section id="contacto" class="py-20 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row bg-white rounded-2xl shadow-2xl overflow-hidden">
+        
+        <!-- Columna del Formulario -->
+        <div class="lg:w-3/5 p-10 lg:p-12">
+          <h3 class="text-2xl font-bold text-slate-900 mb-6">Solicitar Asesoría por WhatsApp</h3>
+          <p class="text-slate-600 mb-8">
+            Por favor, diligencie sus datos básicos y una breve descripción de su caso. Al enviar, será redirigido a mi WhatsApp con la información lista para iniciar nuestra conversación.
+          </p>
+          
+          <form id="whatsappForm" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Nombre Completo *</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required
+                  class="w-full px-4 py-3 rounded-md border border-slate-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600 outline-none transition-shadow"
+                  placeholder="Ej. Juan Pérez"
+                />
+              </div>
+              <div>
+                <label for="phone" class="block text-sm font-medium text-slate-700 mb-1">Celular *</label>
+                <input 
+                  type="tel" 
+                  id="phone" 
+                  name="phone" 
+                  required
+                  class="w-full px-4 py-3 rounded-md border border-slate-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600 outline-none transition-shadow"
+                  placeholder="Ej. 300 123 4567"
+                />
+              </div>
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Correo Electrónico *</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required
+                class="w-full px-4 py-3 rounded-md border border-slate-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600 outline-none transition-shadow"
+                placeholder="ejemplo@correo.com"
+              />
+            </div>
+            
+            <div>
+              <label for="description" class="block text-sm font-medium text-slate-700 mb-1">Breve descripción de su consulta *</label>
+              <textarea 
+                id="description" 
+                name="description" 
+                required
+                rows="4"
+                class="w-full px-4 py-3 rounded-md border border-slate-300 focus:ring-2 focus:ring-amber-600 focus:border-amber-600 outline-none transition-shadow resize-none"
+                placeholder="Cuénteme brevemente de qué se trata su situación legal..."
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit" 
+              class="w-full bg-slate-900 hover:bg-slate-800 text-white font-bold py-4 px-8 rounded-md transition-colors flex justify-center items-center group"
+            >
+              <i data-lucide="message-circle" class="h-5 w-5 mr-2 group-hover:text-green-400 transition-colors"></i>
+              Ir a WhatsApp para Agendar
+            </button>
+            <p class="text-xs text-center text-slate-500 mt-4">
+              Sus datos están protegidos y serán tratados bajo la política de privacidad y protección de datos personales de Colombia.
+            </p>
+          </form>
+        </div>
+
+        <!-- Columna de Información -->
+        <div class="lg:w-2/5 bg-amber-800 text-white p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute inset-0 opacity-10">
+             <img src="https://images.unsplash.com/photo-1505664173615-04f1bef7b50f?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover" alt="" />
+          </div>
+          <div class="relative z-10">
+            <h3 class="text-3xl font-bold mb-4">Dé el primer paso.</h3>
+            <p class="text-amber-100 mb-8 text-lg">
+              Agende su asesoría jurídica hoy. Un análisis a tiempo de su caso puede ahorrarle tiempo, dinero y dolores de cabeza.
+            </p>
+            
+            <div class="space-y-6">
+              <div class="flex items-center">
+                <i data-lucide="message-circle" class="h-6 w-6 text-amber-300 mr-4"></i>
+                <div>
+                  <p class="text-sm text-amber-200">WhatsApp / Celular</p>
+                  <p class="font-semibold text-lg">+57 301 286 7680</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="mail" class="h-6 w-6 text-amber-300 mr-4"></i>
+                <div>
+                  <p class="text-sm text-amber-200">Correo Electrónico</p>
+                  <p class="font-semibold">andreskacec@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i data-lucide="map-pin" class="h-6 w-6 text-amber-300 mr-4"></i>
+                <div>
+                  <p class="text-sm text-amber-200">Ubicación</p>
+                  <p class="font-semibold">Bogotá, Colombia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative z-10 mt-12 pt-8 border-t border-amber-700/50">
+            <p class="text-sm text-amber-200 mb-3">Sígueme en redes sociales:</p>
+            <a href="https://www.instagram.com/andresk.enciso?igsh=MWM5bm91MWRpNTJtcQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" class="inline-flex bg-amber-900/50 p-3 rounded-full hover:bg-amber-900 transition-colors">
+              <i data-lucide="instagram" class="h-6 w-6 text-white"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 py-10 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+      <div class="flex items-center space-x-2 mb-4 md:mb-0">
+        <i data-lucide="scale" class="h-6 w-6 text-amber-700"></i>
+        <span class="text-white font-bold tracking-wider">ENCISO CASTIBLANCO</span>
+      </div>
+      <div class="text-slate-400 text-sm text-center md:text-left">
+        &copy; <span id="currentYear"></span> Andrés Camilo Enciso Castiblanco. Abogado. Todos los derechos reservados.
+      </div>
+      <div class="mt-4 md:mt-0 flex space-x-6">
+        <a href="https://www.instagram.com/andresk.enciso?igsh=MWM5bm91MWRpNTJtcQ%3D%3D&utm_source=qr" target="_blank" rel="noreferrer" class="text-slate-400 hover:text-white transition-colors">
+          <span class="sr-only">Instagram</span>
+          <i data-lucide="instagram" class="h-5 w-5"></i>
+        </a>
+        <a href="mailto:andreskacec@gmail.com" class="text-slate-400 hover:text-white transition-colors">
+          <span class="sr-only">Correo</span>
+          <i data-lucide="mail" class="h-5 w-5"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lógica y Funcionalidad -->
+  <script>
+    // 1. Inicializar los íconos de Lucide
+    lucide.createIcons();
+
+    // 2. Colocar el año actual en el Footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // 3. Manejar el envío del formulario a WhatsApp
+    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+      e.preventDefault(); // Evitar que la página recargue
+
+      // Obtener los valores del formulario
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const email = document.getElementById('email').value;
+      const description = document.getElementById('description').value;
+
+      // Número de WhatsApp con indicativo (+57)
+      const phoneNumber = "573012867680";
+      
+      // Crear el mensaje formateado
+      const text = `Hola Andrés, deseo agendar una asesoría jurídica. \n\n*Mis datos:*\n- Nombre: ${name}\n- Correo: ${email}\n- Celular: ${phone}\n\n*Descripción de mi consulta:*\n${description}`;
+      
+      // Codificar el texto para la URL
+      const encodedText = encodeURIComponent(text);
+      
+      // Construir la URL final y abrir en nueva pestaña
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedText}`;
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
